@@ -38,3 +38,9 @@ fn main() {
     println!(" {}", SECONDS_TO_MINUTE)
 }
 ```
+
+- _Rust primitive data types are written out as formated strings_
+- _Rust has tuples, which have various data types and cannot be mutable and cannot be updated._
+- _Arrays, howevwer, unlike tupples can be updated, but only if stated as muttable. They however have a trade off. They contain only one data type_
+- _The default data type of floats is `f64` whereas the default type of integers is `i32`. The compiler assigns the data types to the variables that were implicitly decalred while compiling_
+- _Rust, like most compiled languges, does not have strings. It has characters, which together make up a customized string_
