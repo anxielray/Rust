@@ -3,6 +3,12 @@ fn main() {
     let result = add_numbers(20, 30);
 
     println!("{}", result);
+
+    let value = {
+        let x = 12;
+        x + 20
+    };
+    println!("{}", value);
 }
 fn add_numbers(x: i32, y: i32)  -> i32{
     let result = x+y;
