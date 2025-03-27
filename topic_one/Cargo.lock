@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "tutorial_one"
+name = "topic_one"
 version = "0.1.0"
