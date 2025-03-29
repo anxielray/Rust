@@ -8,16 +8,13 @@ use std::io;
 use std::io::{BufRead, BufReader, ErrorKind, Write};
 
 fn main() {
-    let age: u32 = 8;
-    if (age >= 1) && (age <= 18) {
-        println!("Important birthday!");
-    } else if (age == 21) || (age == 50) {
-        println!("Important birthday!");
-    } else if (age >= 65) {
-        println!("Important birthday!");
-    }else {
-        println!("Not an important birthday");
-    }
+    let mut my_age = 18;
+    let can_vote = if (my_age >= 18){
+        true
+    } else {
+        false
+    };
+    println!("Status of Raym: {}", can_vote);
 }
 
 /*
