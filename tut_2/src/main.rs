@@ -8,13 +8,13 @@ use std::io;
 use std::io::{BufRead, BufReader, ErrorKind, Write};
 
 fn main() {
-    let mut my_age = 18;
-    let can_vote = if (my_age >= 18){
-        true
-    } else {
-        false
+    let age2 = 8;
+    match age2{
+        1..=18 =>println!("Important birthday!"),
+        21 | 50 => println!("Important birthday!"),
+        65..=i32::MAX => println!("Important birthday!"),
+        _ => println!("Not an important birthday!"),//for all the rest of the ages left
     };
-    println!("Status of Raym: {}", can_vote);
 }
 
 /*
