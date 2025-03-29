@@ -10,9 +10,8 @@ use std::io::{BufRead, BufReader, ErrorKind, Write};
 fn main() {
     let arr_2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     let mut loop_indx = 0;
-    while loop_indx < arr_2.len(){
-        println!("Array: {}", arr_2[loop_indx]);
-        loop_indx+=1;
+    for val in arr_2.iter(){
+        println!("Val: {}", val);
     }
 }
 
