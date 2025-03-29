@@ -10,15 +10,8 @@ use std::io::{BufRead, BufReader, ErrorKind, Write};
 fn main() {
     let arr_2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     let mut loop_indx = 0;
-    loop{
-        if arr_2[loop_indx] %2 == 0{
-            loop_indx += 1;
-            continue;
-        }
-        if arr_2[loop_indx] == 9{
-            break;
-        }
-        println!("Val: {}", arr_2[loop_indx]);
+    while loop_indx < arr_2.len(){
+        println!("Array: {}", arr_2[loop_indx]);
         loop_indx+=1;
     }
 }
