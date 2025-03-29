@@ -1,22 +1,19 @@
 #![allow(unused)]
 
-//import crates
 use rand::Rng;
 use std::cmp::Ordering;
-use std::fs::File;
+use std::fs::{read_to_string, File};
 use std::io;
 use std::io::{BufRead, BufReader, ErrorKind, Write};
 
 fn main() {
-    let arr_2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-    let mut loop_indx = 0;
-    for val in arr_2.iter(){
-        println!("Val: {}", val);
-    }
+    let my_tupple: (u8, String, f64) = (47, "Anxiel".to_string(), 5_000_000.00);
+    println!("Name: {}", my_tupple.1);
+    let(v1, v2, v3) = my_tupple;
+    println!("Age: {}", v1);
 }
 
 /*
-To let the rust complier to assume a variable is to start the variable in an underscore
-an f32 has 6 digits of precision while an f64 has 14 digits of precision
-arrays have a fixed size
+Tupples
+You have to declare the types within the tupple
 */
