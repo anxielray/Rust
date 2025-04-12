@@ -45,7 +45,7 @@ To use the application, follow these steps:
 Provide code and explanations for how to install your project.
 
 ```bash
-git clone https://github.com/rogwel/Rust/chaikin.git
-cd chaikin
+git clone https://github.com/anxielray/Rust.git
+cd Rust/chaikin
 cargo run
 ```
